@@ -20,6 +20,9 @@
 		E07BC55923D7AD4300BA0496 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E07BC55823D7AD4300BA0496 /* ToolbarItemIcon.pdf */; };
 		E07BC55D23D7AF8900BA0496 /* GoogleAdFormatter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BC55C23D7AF8900BA0496 /* GoogleAdFormatter.storyboard */; };
 		E07BC55F23D7AFCA00BA0496 /* GoogleAdFormatterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC55E23D7AFCA00BA0496 /* GoogleAdFormatterViewController.swift */; };
+		E07BC56123D8951D00BA0496 /* ExtensionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC56023D8951D00BA0496 /* ExtensionManager.swift */; };
+		E07BC56323D8B57300BA0496 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC56223D8B57300BA0496 /* Defaults.swift */; };
+		E07BC56523D8BBB800BA0496 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC56423D8BBB800BA0496 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		E07BC55823D7AD4300BA0496 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		E07BC55C23D7AF8900BA0496 /* GoogleAdFormatter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleAdFormatter.storyboard; sourceTree = "<group>"; };
 		E07BC55E23D7AFCA00BA0496 /* GoogleAdFormatterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdFormatterViewController.swift; sourceTree = "<group>"; };
+		E07BC56023D8951D00BA0496 /* ExtensionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionManager.swift; sourceTree = "<group>"; };
+		E07BC56223D8B57300BA0496 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		E07BC56423D8BBB800BA0496 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,9 @@
 		E07BC53C23D7A14E00BA0496 /* GoogleAdFormatter Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E07BC56023D8951D00BA0496 /* ExtensionManager.swift */,
+				E07BC56423D8BBB800BA0496 /* Notifications.swift */,
+				E07BC56223D8B57300BA0496 /* Defaults.swift */,
 				E07BC53D23D7A14E00BA0496 /* SafariExtensionHandler.swift */,
 				E07BC55E23D7AFCA00BA0496 /* GoogleAdFormatterViewController.swift */,
 				E07BC55C23D7AF8900BA0496 /* GoogleAdFormatter.storyboard */,
@@ -254,8 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07BC56523D8BBB800BA0496 /* Notifications.swift in Sources */,
 				E07BC53E23D7A14E00BA0496 /* SafariExtensionHandler.swift in Sources */,
+				E07BC56323D8B57300BA0496 /* Defaults.swift in Sources */,
 				E07BC55F23D7AFCA00BA0496 /* GoogleAdFormatterViewController.swift in Sources */,
+				E07BC56123D8951D00BA0496 /* ExtensionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

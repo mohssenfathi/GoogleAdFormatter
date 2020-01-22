@@ -10,51 +10,65 @@
             <objects>
                 <viewController id="9z6-6I-CFy" customClass="GoogleAdFormatterViewController" customModule="GoogleAdFormatter_Extension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="YfI-4U-RNK">
-                        <rect key="frame" x="0.0" y="0.0" width="340" height="156"/>
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="238"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdU-C4-vzw">
-                                <rect key="frame" x="20" y="20" width="300" height="116"/>
+                                <rect key="frame" x="20" y="20" width="300" height="198"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TR8-9T-3CN">
-                                        <rect key="frame" x="-2" y="95" width="304" height="21"/>
+                                        <rect key="frame" x="-2" y="177" width="304" height="21"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Google Ad Formatter" id="2ea-8q-MfC">
                                             <font key="font" metaFont="systemBold" size="18"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
+                                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1TI-sS-Kvd">
+                                        <rect key="frame" x="-2" y="181" width="304" height="17"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="c99-ph-US7">
+                                            <font key="font" metaFont="menu" size="14"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
                                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="T2X-RN-kZh">
-                                        <rect key="frame" x="0.0" y="76" width="300" height="5"/>
+                                        <rect key="frame" x="0.0" y="158" width="300" height="5"/>
                                     </box>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4ei-GX-Ybv">
-                                        <rect key="frame" x="-2" y="45" width="304" height="19"/>
+                                        <rect key="frame" x="-2" y="128" width="304" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Y5e-II-pR8"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="check" title="Enabled" bezelStyle="regularSquare" imagePosition="right" state="on" imageScaling="proportionallyDown" inset="2" id="vRa-G7-2kT">
+                                        <buttonCell key="cell" type="check" title="Enabled" bezelStyle="regularSquare" imagePosition="right" state="on" inset="2" id="vRa-G7-2kT">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="systemSemibold" size="16"/>
+                                            <font key="font" metaFont="systemSemibold" size="14"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="enabled:" target="9z6-6I-CFy" id="dK8-gq-Ca0"/>
+                                        </connections>
                                     </button>
                                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="pha-BV-dcY">
-                                        <rect key="frame" x="0.0" y="28" width="300" height="5"/>
+                                        <rect key="frame" x="0.0" y="111" width="300" height="5"/>
                                     </box>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tIU-vd-iWc">
-                                        <rect key="frame" x="-2" y="-2" width="304" height="18"/>
+                                        <rect key="frame" x="-2" y="81" width="304" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="lag-6m-pT7"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="check" title="Hide Ads" bezelStyle="regularSquare" imagePosition="right" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="jfF-h3-bNs">
+                                        <buttonCell key="cell" type="check" title="Hide Ads" bezelStyle="regularSquare" imagePosition="right" inset="2" id="jfF-h3-bNs">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="systemSemibold" size="13"/>
+                                            <font key="font" metaFont="systemSemibold" size="14"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="hideAds:" target="9z6-6I-CFy" id="h2s-EC-Dkq"/>
+                                        </connections>
                                     </button>
-                                    <stackView hidden="YES" distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-cb-Azt">
-                                        <rect key="frame" x="0.0" y="86" width="300" height="30"/>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-cb-Azt">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="67"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="soT-wV-x0L">
-                                                <rect key="frame" x="-2" y="7" width="266" height="16"/>
+                                                <rect key="frame" x="-2" y="26" width="266" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Ad Background Color" id="tMx-LV-hjZ">
                                                     <font key="font" metaFont="systemSemibold" size="13"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -62,12 +76,15 @@
                                                 </textFieldCell>
                                             </textField>
                                             <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="lan-4b-Drv">
-                                                <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="270" y="19" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="F0R-zO-gu5"/>
                                                     <constraint firstAttribute="width" constant="30" id="tOf-ri-GPT"/>
                                                 </constraints>
-                                                <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="color" red="1" green="0.98039215686274506" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="coloeChanged:" target="9z6-6I-CFy" id="PdP-H9-584"/>
+                                                </connections>
                                             </colorWell>
                                         </subviews>
                                         <visibilityPriorities>
@@ -82,10 +99,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="eZY-cb-Azt" firstAttribute="leading" secondItem="PdU-C4-vzw" secondAttribute="leading" id="8CT-QD-XU6"/>
+                                    <constraint firstItem="1TI-sS-Kvd" firstAttribute="leading" secondItem="PdU-C4-vzw" secondAttribute="leading" id="A5l-4L-Bpj"/>
                                     <constraint firstAttribute="trailing" secondItem="tIU-vd-iWc" secondAttribute="trailing" id="Ixy-m6-BIN"/>
                                     <constraint firstAttribute="trailing" secondItem="4ei-GX-Ybv" secondAttribute="trailing" id="Ju4-9n-Pav"/>
                                     <constraint firstItem="TR8-9T-3CN" firstAttribute="leading" secondItem="PdU-C4-vzw" secondAttribute="leading" id="VQs-Yq-g05"/>
                                     <constraint firstItem="tIU-vd-iWc" firstAttribute="leading" secondItem="PdU-C4-vzw" secondAttribute="leading" id="Wax-yE-yHn"/>
+                                    <constraint firstAttribute="trailing" secondItem="1TI-sS-Kvd" secondAttribute="trailing" id="bfW-4I-ld8"/>
                                     <constraint firstItem="4ei-GX-Ybv" firstAttribute="leading" secondItem="PdU-C4-vzw" secondAttribute="leading" id="pQp-xh-ksh"/>
                                     <constraint firstAttribute="trailing" secondItem="TR8-9T-3CN" secondAttribute="trailing" id="sHn-ju-Zzy"/>
                                     <constraint firstAttribute="trailing" secondItem="eZY-cb-Azt" secondAttribute="trailing" id="yBS-YB-gnv"/>
@@ -97,8 +116,10 @@
                                     <integer value="1000"/>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
@@ -115,6 +136,12 @@
                             <constraint firstItem="PdU-C4-vzw" firstAttribute="leading" secondItem="YfI-4U-RNK" secondAttribute="leading" constant="20" id="dzj-YN-LuH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adCountLabel" destination="1TI-sS-Kvd" id="9vz-6e-whw"/>
+                        <outlet property="backgroundColorWell" destination="lan-4b-Drv" id="Gzh-T3-6If"/>
+                        <outlet property="enabledButton" destination="4ei-GX-Ybv" id="XiK-5q-2QI"/>
+                        <outlet property="hideAdsButton" destination="tIU-vd-iWc" id="UBY-0x-rqP"/>
+                    </connections>
                 </viewController>
                 <customObject id="ORR-Fk-oXG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
